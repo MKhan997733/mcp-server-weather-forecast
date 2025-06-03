@@ -2,6 +2,9 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import { geocodeUKCity } from "./modules/geo-coding.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const NWS_API_BASE = "https://api.weather.gov";
 const UK_WS_API_BASE = "https://api.openweathermap.org"
